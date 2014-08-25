@@ -9,5 +9,5 @@
 		"128": "marketplace.png"
 	},
 	"launch_path": "/marketplace.html",
-	"csp": "connect-src https://marketplace.firefox.com"
+	"csp": "connect-src http://marketplace-dev.airborn.io"
 }

@@ -37,7 +37,7 @@ req.onreadystatechange = function() {
 		});
 	}
 };
-req.open('GET', 'https://marketplace.firefox.com/api/v1/apps/search/?q=' + encodeURIComponent(search.value) + '&device=desktop&app_type=packaged');
+req.open('GET', 'http://marketplace-dev.airborn.io/api/v1/apps/search/?q=' + encodeURIComponent(search.value) + '&device=desktop&app_type=packaged');
 req.send();
 
 }
