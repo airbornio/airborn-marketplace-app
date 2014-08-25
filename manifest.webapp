@@ -1,0 +1,13 @@
+{
+	"name": "Marketplace",
+	"description": "Install apps with the Marketplace!",
+	"developer": {
+		"name": "Daniel Huigens",
+		"url": "http://airborn.io"
+	},
+	"icons": {
+		"128": "marketplace.png"
+	},
+	"launch_path": "/marketplace.html",
+	"csp": "connect-src https://marketplace.firefox.com"
+}
