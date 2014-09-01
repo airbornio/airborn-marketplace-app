@@ -14,10 +14,16 @@ req.onreadystatechange = function() {
 			var icon = document.createElement('img');
 			icon.src = object.icons[64];
 			app.appendChild(icon);
-			app.appendChild(document.createElement('br'));
-			app.appendChild(document.createTextNode(object.name[object.default_locale]));
-			app.appendChild(document.createElement('br'));
+			var name = document.createElement('div');
+			name.className = 'name';
+			name.appendChild(document.createTextNode(object.name[object.default_locale]));
+			app.appendChild(name);
+			var description = document.createElement('div');
+			description.className = 'description';
+			description.appendChild(document.createTextNode(object.description[object.default_locale]));
+			app.appendChild(description);
 			var installLink = document.createElement('a');
+			installLink.className = 'installLink';
 			installLink.href = '#';
 			installLink.addEventListener('click', function(evt) {
 				evt.preventDefault();
