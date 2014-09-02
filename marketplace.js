@@ -27,14 +27,15 @@ req.onreadystatechange = function() {
 			installLink.href = '#';
 			installLink.addEventListener('click', function(evt) {
 				evt.preventDefault();
+				installLink.textContent = 'Installing…';
 				var request = navigator.mozApps.installPackage(object.manifest_url, {catagories: object.categories});
 				request.onsuccess = function() {
 					console.log(request);
-					document.body.textContent = 'done!';
+					installLink.textContent = 'Installed';
 				};
 				request.onerror = function() {
 					console.log(request);
-					document.body.textContent = 'err';
+					installLink.textContent = 'There was an error. Try again';
 				};
 			});
 			installLink.textContent = 'Install';
