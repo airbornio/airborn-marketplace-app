@@ -17,10 +17,22 @@ function searchApps() {
 				name.className = 'name';
 				name.appendChild(document.createTextNode(object.name[object.default_locale]));
 				app.appendChild(name);
-				var description = document.createElement('div');
+				var description = document.createElement('span');
 				description.className = 'description';
 				description.appendChild(document.createTextNode(object.description[object.default_locale]));
 				app.appendChild(description);
+				app.appendChild(document.createElement('br'));
+				var expandLink = document.createElement('a');
+				expandLink.href = '#';
+				expandLink.addEventListener('click', function(evt) {
+					if(app.classList.toggle('expanded')) {
+						expandLink.textContent = 'Read less…';
+					} else {
+						expandLink.textContent = 'Read more…';
+					}
+				});
+				expandLink.textContent = 'Read more…';
+				app.appendChild(expandLink);
 				var installLink = document.createElement('a');
 				installLink.className = 'installLink';
 				installLink.href = '#';

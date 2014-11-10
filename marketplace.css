@@ -6,7 +6,7 @@ body {
 }
 .app {
 	margin: 30px 0;
-	padding: 8px 150px;
+	padding: 8px 150px 8px 224px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -16,14 +16,17 @@ body {
 	position: relative;
 }
 .app img {
-	float: left;
-	margin-right: 10px;
+	position: absolute;
+	left: 150px;
 }
 .app .name {
 	font-size: 16px;
 	font-weight: bold;
 }
 .app .installLink {
-	position: absolute;
-	bottom: 10px;
+	margin-top: 25px;
+	display: inline-block;
+}
+.app.expanded {
+	white-space: pre-wrap;
 }
