@@ -20,6 +20,9 @@ function searchApps() {
 				var description = document.createElement('span');
 				description.className = 'description';
 				description.appendChild(document.createTextNode(object.description[object.default_locale]));
+				description.innerHTML = object.description[object.default_locale].replace(
+					/<(?!(?:\/)?(?:a|ul|li|strong|b|em|i)(?: |>))/ig, '&lt;'
+				);
 				app.appendChild(description);
 				app.appendChild(document.createElement('br'));
 				var expandLink = document.createElement('a');
