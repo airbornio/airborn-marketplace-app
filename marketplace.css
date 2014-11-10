@@ -1,8 +1,19 @@
 body {
 	margin: 0;
 }
+#header {
+	margin: 30px 150px 0;
+	position: relative;
+}
+#logo {
+	font-size: x-large;
+	font-weight: bold;
+	font-variant: small-caps;
+}
 #searchContainer {
-	padding: 30px 150px 0 ;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 .app {
 	margin: 30px 0;
