@@ -25,6 +25,7 @@ body {
 	font-size: x-small;
 	background-image: url(crisp_paper_ruffles_horizontal.png);
 	position: relative;
+	min-height: 64px;
 }
 .app img {
 	position: absolute;
@@ -37,10 +38,22 @@ body {
 .app:not(.expanded) .description * {
 	display: inline;
 }
+.app .expandLink {
+	cursor: pointer;
+	position: absolute;
+	bottom: 8px;
+	right: 150px;
+}
 .app .installLink {
-	margin-top: 25px;
-	display: inline-block;
+	margin-top: 18px;
+	font-size: x-small;
+	position: absolute;
+	bottom: 8px;
 }
 .app.expanded {
 	white-space: pre-wrap;
+}
+.app.expanded .description {
+    margin-bottom: 30px;
+    display: inline-block;
 }

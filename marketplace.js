@@ -25,8 +25,8 @@ function searchApps() {
 				);
 				app.appendChild(description);
 				app.appendChild(document.createElement('br'));
-				var expandLink = document.createElement('a');
-				expandLink.href = '#';
+				var expandLink = document.createElement('span');
+				expandLink.className = 'expandLink';
 				expandLink.addEventListener('click', function(evt) {
 					if(app.classList.toggle('expanded')) {
 						expandLink.textContent = 'Read less…';
@@ -36,9 +36,8 @@ function searchApps() {
 				});
 				expandLink.textContent = 'Read more…';
 				app.appendChild(expandLink);
-				var installLink = document.createElement('a');
+				var installLink = document.createElement('button');
 				installLink.className = 'installLink';
-				installLink.href = '#';
 				installLink.addEventListener('click', function(evt) {
 					evt.preventDefault();
 					installLink.textContent = 'Installing…';
