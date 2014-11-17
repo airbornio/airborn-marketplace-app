@@ -2,7 +2,7 @@ body {
 	margin: 0;
 }
 #header {
-	margin: 30px 150px 0;
+	margin: 30px 130px 0;
 	position: relative;
 }
 #logo {
@@ -17,7 +17,7 @@ body {
 }
 .app {
 	margin: 30px 0;
-	padding: 8px 150px 8px 224px;
+	padding: 8px 130px 8px 204px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -29,7 +29,7 @@ body {
 }
 .app img {
 	position: absolute;
-	left: 150px;
+	left: 130px;
 }
 .app .name {
 	font-size: 16px;
@@ -42,7 +42,7 @@ body {
 	cursor: pointer;
 	position: absolute;
 	bottom: 8px;
-	right: 150px;
+	right: 130px;
 }
 .app .installLink {
 	margin-top: 18px;
