@@ -21,7 +21,7 @@ function searchApps() {
 				description.className = 'description';
 				description.appendChild(document.createTextNode(object.description[object.default_locale]));
 				description.innerHTML = object.description[object.default_locale].replace(
-					/<(?!(?:\/)?(?:a|ul|li|strong|b|em|i)(?: |>))/ig, '&lt;'
+					/<(?!(?:\/)?(?:a|ul|li|strong|b|em|i|abbr)(?: |>))/ig, '&lt;'
 				);
 				app.appendChild(description);
 				app.appendChild(document.createElement('br'));
