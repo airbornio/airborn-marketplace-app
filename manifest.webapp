@@ -3,7 +3,7 @@
 	"description": "Install apps with the Marketplace!",
 	"developer": {
 		"name": "Daniel Huigens",
-		"url": "http://airborn.io"
+		"url": "http://airbornos.com"
 	},
 	"icons": {
 		"64": "marketplace.png"
