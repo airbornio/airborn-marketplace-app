@@ -9,5 +9,8 @@
 		"64": "marketplace.png"
 	},
 	"launch_path": "/marketplace.html",
-	"csp": "connect-src https://marketplace.firefox.com"
+	"csp": "connect-src https://marketplace.firefox.com",
+	"permissions": {
+		"webapps-manage": {}
+	}
 }
